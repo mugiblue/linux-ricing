@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+pgrep -x sxhkd > /dev/null || sxhkd &
+picom -f &
+
+bspc config border_width         2
+bspc config window_gap           11
+
+bspc config split_ratio          0.52
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+$HOME/.screenlayout/default.sh &
+
+bspc wm -O eDP-1 HDMI-1
+bspc monitor eDP-1 -d 1 2 3 4 5  
+bspc monitor HDMI-1 -d 6 7 8 9 0
+
+$HOME/.config/polybar/launch.sh &
+
+nitrogen --restore &
+nm-applet &
+dunst &

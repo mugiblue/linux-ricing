@@ -1,0 +1,73 @@
+[global]
+
+  monitor = 0
+
+  follow = mouse
+
+  geometry = "0x0-30+20"
+
+  indicate_hidden = 0
+
+  shrink = no
+
+  transparency = 0
+
+  notification_height = 0
+
+  separator_height = 2
+
+  padding = 8
+
+  horizontal_padding = 8
+
+  frame_width = 3
+
+  frame_color = "#aaaaaa"
+
+  format = "<b>%s</b>\n%b"
+  
+  separator_color = auto
+
+  sort = yes
+
+  idle_threshold = 120
+
+  font = DejaVu Sans Mono 9
+  
+  line_height = 0
+
+  markup = full
+
+  alignment = center
+
+  show_age_threshold = 60
+
+  word_wrap = yes
+
+  allipsize = middle
+
+  ignore_newline = no
+
+  stack_duplicates = true
+
+  hide_duplicate_count = false
+
+  show_indicators = yes
+
+[urgency_low]
+
+  background = "#2b2b2b"
+  foregound = "#ffffff"
+  timeout = 5
+
+[urgency_normal]
+  
+  background = "#2b2b2b"
+  foregound = "#ffffff"
+  timeout = 5
+
+[urgency_critical]
+  
+  background = "#90000"
+  foregound = "#ffffff"
+  frame_color = "#ff0000"
